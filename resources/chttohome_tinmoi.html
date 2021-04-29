@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0056)https://cohoi.tuoitre.vn/cachettos/chttohome_tinmoi.html -->
+<html xmlns="//www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>TTO Home Slide Tin Mới</title>
+<link rel="stylesheet" type="text/css" href="./font.css">
+<link type="text/css" rel="stylesheet" href="./tto_new_style.css">
+</head>
+
+<body>
+
+<script type="text/javascript" src="./jquery-2.1.1.min.js.download"></script>
+<script type="text/javascript" src="./slide-tto-new.js.download"></script>
+<script>
+var a1=1; var a2=0; var a3=0;
+$('#ct1').show();
+
+
+$(document).ready(function(){
+	$(".chadby").mouseover(function(){
+		var X=$(this).attr('id');
+		if(X==1){
+			$(".chadby_content").hide();
+			$(this).attr('id', '0');
+		}
+		else{
+			$(".chadby_content").show();
+			$(this).attr('id', '1');
+		}
+	});
+	$(".chadby_content").mouseover(function(){
+		return false
+	});
+	$(".chadby").mouseover(function(){
+		return false
+	});
+	$(document).mouseover(function(){
+		$(".chadby_content").hide();
+		$(".chadby").attr('id', '');
+	});
+});
+
+/*
+$(document).ready(function () {
+    var autoscrolling = true;
+    $('.ch_slide').infiniteCarousel().mouseover(function () {
+        autoscrolling = false;
+    }).mouseout(function () {
+        autoscrolling = true;
+    });
+    setInterval(function () {
+        if (autoscrolling) {
+            $('.ch_slide').trigger('next');
+        }
+    }, 90000);
+});
+*/
+</script>
+
+
+</body></html>
